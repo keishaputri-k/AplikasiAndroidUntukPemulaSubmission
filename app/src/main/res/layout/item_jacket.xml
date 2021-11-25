@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_16dp"
+    android:layout_margin="@dimen/_16dp">
+<!--    android:layout_marginTop="@dimen/_16dp"-->
+<!--    android:layout_marginStart="@dimen/_16dp"-->
+<!--    android:layout_marginEnd="@dimen/_16dp"-->
+<!--    android:layout_marginBottom="@dimen/_16dp"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16dp">
+        <ImageView
+            android:id="@+id/ivJacketItem"
+            android:layout_width="@dimen/_80dp"
+            android:layout_height="@dimen/_80dp"
+            android:contentDescription="@string/txt_imageview"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvJacketNameItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/txt_jacket_name"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivJacketItem"
+            app:layout_constraintTop_toTopOf="@id/ivJacketItem" />
+
+        <TextView
+            android:id="@+id/tvJacketPriceItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_jacket_price"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvJacketNameItem"
+            app:layout_constraintStart_toStartOf="@id/tvJacketNameItem"
+            app:layout_constraintTop_toBottomOf="@id/tvJacketNameItem"
+            app:layout_constraintVertical_bias="0.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

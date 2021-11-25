@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AplikasiAndroidUntukPemulaSubmission</string>
+    <string name="txt_imageview">ImageView</string>
+    <string name="txt_jacket_name">Jacket Name</string>
+    <string name="txt_jacket_price">Jacket Price</string>
+    <string name="txt_keisha_putri_theanny">Keisha Putri Theanny</string>
+    <string name="txt_pkeisha47_gmail_com">pkeisha47@gmail.com</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_desc">Desc</string>
+    <string name="txt_profile">Profile</string>
+</resources>
